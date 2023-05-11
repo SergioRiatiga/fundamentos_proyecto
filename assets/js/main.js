@@ -327,7 +327,7 @@ function setLoading() {
         setTimeout(()=> {
             const contentLoadingHTML = document.querySelector(`.contentLoading`);
             contentLoadingHTML.classList.add(`contentLoading__none`);
-        },2000)
+        },1000)
     })
 }
 
