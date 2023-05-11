@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Comerce</title>
+    <link rel="shortcut icon" href="./assets/images/icon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="container">
+            <a href="#home" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="nav_logo-icon" viewBox="0 0 48.92 56.48"><path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"/></svg>
+                <p>STORE</p>
+            </a>
+
+            <ul class="menu">
+                <li>
+                    <a href="#home" id="productsMenu">Home</a>
+                </li>
+                <li>
+                    <a href="#container" id="homeMenu">Products</a>
+                </li>
+            </ul>
+
+            <div class="navbar__icons">
+                <i class='bx bx-moon iconTheme'></i>
+                <i class='bx bx-shopping-bag' id="iconCart">
+                    <span id="amountItems">0</span>
+                </i>
+                <i class='bx bxs-grid-alt iconMenu' id="iconMenu"></i>
+            </div>
+
+            
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home__img">
+            <div class="home__empty"></div>
+            <div class="home__img--color">
+                <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270450/eCommerce/sweater1_o8qh0p.png" alt="Sweater de punto grueso">
+            </div>
+        </div>
+
+        <div class="home__text">
+            <h2>New Sweatshirt COLLECTIONS 2022</h2>
+            <p>
+                Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.
+            </p>
+            <p>$14.00</p>
+            <a href="#container" class="home__btn">Show more</a>
+        </div>
+
+        
+    </section>
+
+    <main class="container" id="container">
+
+        <div class="products__filterBar">
+            <button class="filterBar--all" data-filter="all">
+                <p>Show all</p>
+                <p>Show all products</p>
+            </button>
+            <button class="filterBar--shirt" data-filter=".shirt">
+                <p>Shirt</p>
+                <p>7 products</p>
+            </button>
+            <button class="filterBar--hoddie" data-filter=".hoddie">
+                <p>Hoddie</p>
+                <p>6 products</p>
+            </button>
+            <button class="filterBar--sweater" data-filter=".sweater">
+                <p>Sweater</p>
+                <p>5 products</p>
+            </button>
+        </div>
+
+        <section class="products"></section>
+    </main>
+
+    <div class="cart">
+        <div class="cart__products"></div>
+        <div class="cart__total">
+            <div class="cart__total--info"></div>
+            <button id="btn__buy">Comprar</button>
+        </div>
+    </div>
+
+    <div class="modalProduct ">
+    </div>
+    
+    <div class="contentLoading">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+            <title>Academlo Logo</title>
+            <g>
+                <g>
+                    <path
+                        d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                    </path>
+                    <path
+                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                    </path>
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__content--information">
+                <h3>Our information</h3>
+                <a href="#home">Toluca - México</a>
+            </div>
+            <div class="footer__content--aboutUs">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#home">Support Center</a></li>
+                    <li><a href="#home">Customer Support</a></li>
+                    <li><a href="#home">About Us</a></li>
+                    <li><a href="#home">Copy Right</a></li>
+                </ul>
+            </div>
+            <div class="footer__content--product">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#container">All</a> </li>
+                    <li><a href="#container">Hoodies</a></li>
+                    <li><a href="#container">Shirts</a></li>
+                    <li><a href="#container">Sweatshirts</a></li>
+                </ul>
+            </div>
+            <div class="footer__content--social">
+                <h3>Social</h3>
+                <div>
+                    <a href="#home"><i class='bx bxl-facebook'></i></a>
+                    <a href="#home"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#home"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+        <p>Sergio Andrés Riatiga Ibáñez, sergioriatiga@gmail.com, <a href="https://github.com/SergioRiatiga" target="_blank">github.</a></p>
+    </footer>
+
+</body>
+</html>
